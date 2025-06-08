@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    
+    <div class="choices">
+    <div class="choice" id="rock">
+        <img src="rock2.jpg" alt="Rock">
+    </div>
+    <div class="choice" id="paper">
+        <img src="paper2.jpg" alt="Paper">
+    </div>
+    <div class="choice" id="scissor">
+        <img src="scissor.jpg" alt="Scissor">
+    </div>
+    </div>
+
+    <!-- <div class="scoreboard">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+    </div> -->
+    <div class="scoreboard">
+    <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+    </div> <!-- <--- This closing tag was missing -->
+    <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+    </div>
+</div>
+<!-- Add after the scoreboard -->
+<div class="computer-choice">
+    <p>Computer chose:</p>
+    <img id="comp-choice-img" src="" alt="Computer Choice" style="width: 100px; height: 100px; display: none;">
+</div>
+
+<!-- Add this below msg-container -->
+<div class="reset-container">
+    <button id="reset-btn">Reset Game</button>
+</div>
+
+
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+    </div>
+    <div class="countdown" id="countdown" style="font-size: 24px; font-weight: bold; margin-top: 10px;"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
